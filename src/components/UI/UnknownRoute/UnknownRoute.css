@@ -1,0 +1,33 @@
+.UnknownRoute{
+	text-align: center;
+	color: rgb(102, 100, 100);
+	margin-top: 10%;
+	font-size: 20px
+}
+
+.UnknownRoute img{
+	height: 200px;
+}
+
+.Blinking{
+	animation: BlinkingText 1.2s infinite
+}
+
+@keyframes BlinkingText{
+	0%{color: rgb(102, 100, 100)}
+	49%{color: rgb(102, 100, 100)}
+	69%{color: transparent}
+	99%{color: transparent}
+	100%{color: rgb(102, 100, 100)}
+}
+
+
+@media(max-width:500px){
+	.UnknownRoute{
+		margin-top: 25%;
+	}
+		
+	.UnknownRoute img{
+		height: 150px;
+	}
+}
